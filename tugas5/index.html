@@ -13,7 +13,7 @@
         <meta name="description" content="Tugas Komputasi Numerik">
       
       
-        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/tugas1/">
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/tugas5/">
       
       
         <meta name="author" content="Ifan Dwi Cahya">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Tugas 1 - Tugas kuliah</title>
+        <title>Tugas 5 - Tugas kuliah</title>
       
     
     
@@ -116,7 +116,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#deret-maclaurin" tabindex="0" class="md-skip">
+      <a href="#richardson-extrapolation" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Tugas 1
+                Tugas 5
               
             </span>
           
@@ -293,72 +293,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 1
-      </label>
-    
-    <a href="./" title="Tugas 1" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tugas1/" title="Tugas 1" class="md-nav__link">
       Tugas 1
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#deret-maclaurin" class="md-nav__link">
-    DERET MACLAURIN
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#soal" class="md-nav__link">
-    Soal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#penyelesaian" class="md-nav__link">
-    Penyelesaian
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -402,11 +341,56 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../tugas5/" title="Tugas 5" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 5
+      </label>
+    
+    <a href="./" title="Tugas 5" class="md-nav__link md-nav__link--active">
       Tugas 5
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabel-richardson-extrapolation" class="md-nav__link">
+    Tabel Richardson Extrapolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-richardson-extrapolation" class="md-nav__link">
+    Program Richardson Extrapolation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -424,41 +408,23 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deret-maclaurin" class="md-nav__link">
-    DERET MACLAURIN
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#soal" class="md-nav__link">
-    Soal
+  <a href="#tabel-richardson-extrapolation" class="md-nav__link">
+    Tabel Richardson Extrapolation
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#penyelesaian" class="md-nav__link">
-    Penyelesaian
+      
+        <li class="md-nav__item">
+  <a href="#program-richardson-extrapolation" class="md-nav__link">
+    Program Richardson Extrapolation
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -479,93 +445,73 @@
               
                 
                 
-                  <h1>Tugas 1</h1>
-                
-                <h2 id="deret-maclaurin"><strong>DERET MACLAURIN</strong><a class="headerlink" href="#deret-maclaurin" title="Permanent link">&para;</a></h2>
-<p>Deret MacLaurin merupakan suatu fungsi f(x) yang memiliki turunan f'(x), f”(x), f”'(x), dan seterusnya yang kontinyu dalam interval I dan a, x I maka untuk x disekitar a yaitu |x – a| &lt; , f(x) dapat diekspansi kedalam Deret Taylor. </p>
-<p>contoh Deret Maclaurin  :
-$$
-f(x) = f(0)+f'(0) \frac{x}{1!}+f''(0) \frac{x^2}{2!}+f'''(0) \frac{x^3}{3!}+...
-$$</p>
-<h4 id="soal"><strong>Soal</strong><a class="headerlink" href="#soal" title="Permanent link">&para;</a></h4>
-<p>tentukan e^2x dengan x = 4 dan ekspansi eror &lt; 0,001.</p>
-<h4 id="penyelesaian"><strong>Penyelesaian</strong><a class="headerlink" href="#penyelesaian" title="Permanent link">&para;</a></h4>
-<p><em>Perhitungan e^2x</em></p>
-<p>Dalam banyak masalah terapan, pilihan basis yang mudah digunakan adalah bilangan irasional <em>e = 2,718281828...</em></p>
-<p>Bilangan ini disebut <em>basis natural</em>. Fungsi <em>f</em>(<em>x</em>) = <em>ex</em> disebut sebagai fungsi eksponensial natural. . Pastikan bahwa dalam melihat fungsi eksponensial <em>f</em>(<em>x</em>) = <em>ex</em>, <em>e</em> adalah konstanta 2,718281828…, sedangkan <em>x</em> adalah variabel.</p>
-<p>Untuk bilangan e2^x</p>
-<p>maka:</p>
-<p><img alt="" src="../11.png" /></p>
-<p><img alt="" src="../12.png" /></p>
-<p>cara perhitungannya adalah sebagai berikut:</p>
-<p><img alt="" src="../13.png" /></p>
-<p><img alt="" src="../14.png" /></p>
-<p>Jika nilai x diganti dengan 4 maka hasilnya adalah 296,99</p>
-<h4 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h4>
-<p>Untuk membuat program agar dapat mengekspansi bilangan e^2x dengan nilai x=4 hingga nilai menjadi kurang dari 0,001 bisa dibuat dengan listing program sebagai berikut.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+                <h1 id="richardson-extrapolation">Richardson Extrapolation<a class="headerlink" href="#richardson-extrapolation" title="Permanent link">&para;</a></h1>
+<p><img alt="" src="../richard.png" /></p>
+<p><img alt="" src="../richard2.png" /></p>
+<h2 id="tabel-richardson-extrapolation">Tabel Richardson Extrapolation<a class="headerlink" href="#tabel-richardson-extrapolation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>D(0,0)=Φ(h)</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D(1,0)=Φ(h/2)</td>
+<td>D(1,1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D(2,0)=Φ(h/4)</td>
+<td>D(2,1)</td>
+<td>D(2,2)</td>
+<td></td>
+</tr>
+<tr>
+<td>D(3,0)=Φ(h/8)</td>
+<td>D(3,1)</td>
+<td>D(3,2)</td>
+<td>D(3,3)</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../richard3.png" /></p>
+<h2 id="program-richardson-extrapolation">Program Richardson Extrapolation<a class="headerlink" href="#program-richardson-extrapolation" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span> 
+    <span class="n">Z</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">Z</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Z</span>
 
-<span class="n">x</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">hsl</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">ulang</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">def</span> <span class="nf">D</span><span class="p">(</span><span class="n">Func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>   
+    <span class="k">return</span> <span class="p">(</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">-</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">h</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 
-<span class="k">while</span> <span class="n">hsl</span><span class="o">&gt;</span><span class="mf">0.001</span><span class="p">:</span>
-    <span class="n">fx</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">fy</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-        <span class="n">fx</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">i</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">Richardson_dif</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">):</span> 
+    <span class="sd">&#39;&#39;&#39;Richardson extrapolation method for numerical calculation of first derivative &#39;&#39;&#39;</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">9</span>
+    <span class="n">L</span><span class="o">=</span><span class="n">zeros</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">I</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="n">L</span><span class="p">[</span><span class="n">I</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">D</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">I</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">j</span><span class="p">):</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">))</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numerical differentiation of Func=-0.1*x**4-0.15*x**3-0.5*x**2-0.25*x+1.2 at x=0.5&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
 
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
-        <span class="n">fy</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">j</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-
-    <span class="n">hsl</span> <span class="o">=</span> <span class="n">fy</span><span class="o">-</span><span class="n">fx</span>
-    <span class="n">a</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="n">b</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;perulangan ke&quot;</span><span class="p">,</span><span class="n">ulang</span><span class="p">,</span><span class="s2">&quot;= &quot;</span><span class="p">,</span><span class="n">hsl</span><span class="p">)</span>
-    <span class="n">ulang</span><span class="o">+=</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;diff(2**cos(pi+sin(x)) at x=pi/2 is equal to = </span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 
-<p>Output:</p>
-<div class="codehilite"><pre><span></span><code>perulangan ke 1 =  1.0
-perulangan ke 2 =  8.0
-perulangan ke 3 =  32.0
-perulangan ke 4 =  85.33333333333333
-perulangan ke 5 =  170.66666666666669
-perulangan ke 6 =  273.0666666666666
-perulangan ke 7 =  364.08888888888896
-perulangan ke 8 =  416.1015873015872
-perulangan ke 9 =  416.1015873015872
-perulangan ke 10 =  369.8680776014112
-perulangan ke 11 =  295.89446208112895
-perulangan ke 12 =  215.195972422639
-perulangan ke 13 =  143.46398161509296
-perulangan ke 14 =  88.28552714774924
-perulangan ke 15 =  50.448872655856576
-perulangan ke 16 =  26.90606541645684
-perulangan ke 17 =  13.45303270822842
-perulangan ke 18 =  6.330838921519444
-perulangan ke 19 =  2.8137061873417224
-perulangan ke 20 =  1.184718394670199
-perulangan ke 21 =  0.47388735786807956
-perulangan ke 22 =  0.18052851728316455
-perulangan ke 23 =  0.06564673355751438
-perulangan ke 24 =  0.022833646454728296
-perulangan ke 25 =  0.0076112154847578495
-perulangan ke 26 =  0.0024355889549951826
-perulangan ke 27 =  0.0007494119863622473
+<p>Output :</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Numerical</span> <span class="n">differentiation</span> <span class="n">of</span> <span class="n">Func</span><span class="o">=-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="n">at</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span>
+<span class="o">-</span><span class="mf">0.91250000000000530687</span>
+<span class="n">diff</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="n">at</span> <span class="n">x</span><span class="o">=</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span> <span class="ow">is</span> <span class="n">equal</span> <span class="n">to</span> <span class="o">=</span> <span class="mf">0.16849558398154249050</span>
 </code></pre></div>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax:{inlineMath:[['$$','$$']]}
-});
-</script>
-
-<script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
                 
                   
                 
@@ -587,7 +533,7 @@ MathJax.Hub.Config({
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Beranda" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tugas4/" title="Tugas 4" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -596,25 +542,11 @@ MathJax.Hub.Config({
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Beranda
+                Tugas 4
               </span>
             </div>
           </a>
         
-        
-          <a href="../tugas2/" title="Tugas 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Tugas 2
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
