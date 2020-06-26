@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://squidfunk.github.io/mkdocs-material/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas1/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas2/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas3/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas4/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas5/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas6/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/tugas7/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://squidfunk.github.io/mkdocs-material/UAS/</loc>
+     <lastmod>2020-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
